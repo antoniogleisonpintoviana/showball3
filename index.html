@@ -1,0 +1,4326 @@
+<html>
+    <head>
+       <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">-->
+        <title>
+            showball
+        </title>
+    </head>
+    <body bgcolor="black">
+        
+
+        
+        
+        <style>
+            #p{
+                position: absolute;
+                top:300px;
+                left:200px ;
+            }
+            
+            #btnJogar{
+                position: absolute;
+                top:850px;
+                left: 10px;
+                /*height: 150px;
+                width: 150px;*/
+                border-width: 2px;
+                border: 2px solid;
+            }
+            
+
+            #b1{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: red;
+                position: absolute;
+              /*  left: 880px;
+                top:430px;*/
+                
+                top:1588px;
+                left: 1298px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+             #b2{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: red;
+                position: absolute;
+                /*left: 1120px;
+                top:430px;*/
+                top:1588px;
+                left: 1100px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60pt;
+            }
+             #b3{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: yellow;
+                position: absolute;
+               /* left: 1220px;
+                top:430px;*/
+                top:1588px;
+                left: 958px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+            #b4{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: green;
+                position: absolute;
+                /*left: 1320px;
+                top:430px;*/
+                top:1588px;
+                left: 820px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+            }
+            
+            #b5{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+               /* left: 1420px;
+                top:430px;*/
+                top:1588px;
+                left: 690px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+            
+            #b6{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+                /*left: 1520px;
+                top:430px;*/
+                top:1588px;
+                left: 580px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+                        
+            #b7{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+                /*left: 1620px;
+                top:430px;*/
+                top:1588px;
+                left: 460px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+            #b8{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: red;
+                position: absolute;
+                /*left: 1720px;
+                top:430px;*/
+                top:988px;
+                left: 640px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+             #b9{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: green;
+                position: absolute;
+               /* left: 1820px;
+                top:430px;*/
+                top:1395px;
+                left: 1220px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+             #b10{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: green;
+                position: absolute;
+                /*left: 1920px;
+                top:430px;*/
+                top:1395px;
+                left: 1225px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+            #b11{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: green;
+                position: absolute;
+              /*  left: 2020px;
+                top:430px;*/
+                top:1395px;
+                left: 1005px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+                        
+            #b12{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: green;
+                position: absolute;
+               /* left: 2120px;
+                top:430px;*/
+                top:1395px;
+                left: 885px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+            #b13{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: green;
+                position: absolute;
+               /* left: 2220px;
+                top:430px;*/
+                top:995px;
+                left: 760px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+            #b14{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+               /* left: 2320px;
+                top:430px;*/
+                top:1395px;
+                left: 640px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+            #b15{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+                /*left: 2320px;
+                top:430px;*/
+                top:1395px;
+                left: 520px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+               visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+            #b16{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+               /* left: 2420px;
+                top:430px;*/
+                top:1260px;
+                left: 1265px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+                        #b17{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+              /*  left: 2520px;
+                top:430px;*/
+                top:1260px;
+                left: 1130px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+                                    #b18{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+               /* left: 2620px;
+                top:430px;*/
+                top:1260px;
+                left: 995px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+               visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+                                                #b19{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+                /*left: 2720px;
+                top:430px;*/
+                top:1260px;
+                left: 880px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+                                                            #b20{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+               /* left: 2820px;
+                top:430px;*/
+                top:1260px;
+                left: 760px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+               visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+                                        #b21{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+                
+                top:430px;
+                top:1260px;
+                left: 640px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+               visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+                                                                                      #b22{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+               /* left: 2920px;
+                top:430px;*/
+                top:1260px;
+                left: 530px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+                                                                                    #b23{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+               
+                
+                top:1130px;
+                left: 1250px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                 visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+                                                                                    #b24{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+                /*left: 3220px;
+                top:430px;*/
+                top:930px;
+                left: 1130px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+                                                                                    #b25{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+               /* left: 3320px;
+                top:430px;*/
+                top:1130px;
+                left: 1010px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+               visibility: hidden;
+                font-size: 60px;
+                
+            }
+                                                                                    #b26{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+                /*left: 3420px;
+                top:430px;*/
+                top:1130px;
+                left: 910px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+            
+                                                                                    #b27{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+               /*left: 3520px;
+                top:430px;*/
+                top:1130px;
+                left: 760px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+                                                                                    #b28{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+               
+                top:1130px;
+                left: 640px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+               visibility: hidden;
+                font-size: 60px;
+                
+            }
+           #b29{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+             
+                
+                top:1130px;
+                left: 1120px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+                                  
+              #b30{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+               position: absolute;
+            
+                top:1130px;
+                left: 460px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 60px;
+                
+            }
+            
+            #bolas{
+                width: 120px;
+                height: 480px;
+               /* border-radius: 50%;*/
+               /* border: 2px solid white ;*/
+                background-color: transparent;
+                position: absolute;
+                left: 1050px;
+                top:330px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-style: bold;
+                background: no-repeat center 120px 480px;
+                font-size: 60px;
+                
+            }
+            
+        </style>
+        
+        
+        <style>
+            #logo{
+               /* position: absolute;
+                top:10px;*/
+            }
+        </style>
+        <img src="image/logo.png">
+		
+		
+		<style>
+		   #restart{
+		        position:absolute;
+				left:2000px;
+				font-size:550px;
+				color:'white';
+		   }
+		   
+		   		   #creditos{
+		        position:absolute;
+				left:2000px;
+				top:1000px
+				font-size:250px;
+				color:'white';
+		   }
+		
+		
+		</style>
+        
+        
+		
+        <a id="restart" href="index.html">restart</a>
+		
+		<div id="creditos">
+		<p>
+		Desenvolvido por Gleison
+		<br>
+		antoniogleisonpintoviana2@gmail.com
+		</p>
+		</div>
+		
+		
+		
+             <center>
+            <img id="p"src="image/p.png"
+            width="1500px"
+            height="1500px"
+            >
+            </center>
+            
+            <div id="b1">
+                
+            </div>
+            
+           <div id="b2">
+                
+            </div>
+            
+           <div id="b3">
+                
+            </div>
+            
+            <div id="b4">
+                
+            </div>
+            
+            <div id="b5">
+                
+            </div>
+            
+            <div id="b6">
+                
+            </div>
+            
+            <div id="b7">
+                
+            </div>
+            
+            <div id="b8">
+                
+            </div>
+            
+            <div id="b9">
+                
+            </div>
+            
+            <div id="b10">
+                
+            </div>
+            
+            <div id="b11">
+                
+            </div>
+            
+            <div id="b12">
+                
+            </div>
+            
+            <div id="b13">
+                
+            </div>
+            
+            <div id="b14">
+                
+            </div>
+            
+            <div id="b15">
+                
+            </div>
+            
+                        
+            <div id="b16">
+                
+            </div>
+            
+            <div id="b17">
+                
+            </div>
+                        
+            <div id="b18">
+                
+            </div>
+            
+            <div id="b19">
+                
+            </div>
+            
+            <div id="b20">
+                
+            </div>
+            
+            <div id="b21">
+                
+            </div>
+            
+            <div id="b22">
+                
+            </div>
+            
+            <div id="b23">
+                
+            </div>
+            
+            <div id="b24">
+                
+            </div>
+            
+            <div id="b25">
+                
+            </div>
+            
+            <div id="b26">
+                
+            </div>
+            
+            <div id="b27">
+                
+            </div>
+            
+            <div id="b28">
+                
+            </div>
+            
+            <div id="b29">
+                
+            </div>
+            
+             <div id="b30">
+                
+            </div>
+            
+            <div id="bolas">
+                
+            </div>
+            
+            
+            
+            <style>
+               #aux1{
+                background-color: green;
+                position: absolute;
+                top: 370;
+                left: 1000px;
+                width: 10px;
+                height: 200px;
+                
+                }
+            </style>
+            
+           <!-- <div id="aux1">
+                
+            </div>-->
+            
+            
+            <style>
+                #c1{
+                    position: absolute;
+                    top: 2000px;
+                    left: 200px;
+                    color: black;
+                    width: 590px;
+                    height: 100px;
+                    /*background-color: white*/;
+                   /* border-top: 105px solid green;*/
+                 /*   padding-left: 20px;*/
+                    
+                
+               /* background: url('image/cartela1.png')no-repeat left;*/
+                 
+                /* width: 500px;
+                 height: 500px;*/
+                 
+
+                }
+                #c2{
+                    position: absolute;
+                    top: 2000px;
+                    left: 1000px;
+                    color: black;
+                    width: 690px;
+                    height: 100px;
+                    /*background-color: white;*/
+                   /* border-top: 105px*/ solid green;
+                
+               /* background: url('image/cartela1.png')no-repeat left;*/
+                 
+                /* width: 500px;
+                 height: 500px;*/
+                
+
+                }
+                #c3{
+                    position: absolute;
+                    top: 2500px;
+                    left: 200px;
+                    color: black;
+                    width: 590px;
+                    height: 100px;
+                   /* background-color: white;*/
+                /*    border-top: 25px solid green;*/
+                
+               /* background: url('image/cartela1.png')no-repeat left;*/
+                 
+                /* width: 500px;
+                 height: 500px;*/
+
+                }
+                 #c4{
+                    position: absolute;
+                    top: 2500px;
+                    left: 1000px;
+                    color: black;
+                    width: 590px;
+                    height: 100px;
+                   /* background-color: white;*/
+                   /* border-top: 25px solid trasparent;*/
+                
+               /* background: url('image/cartela1.png')no-repeat left;*/
+                 
+                /* width: 500px;
+                 height: 500px;*/
+
+                }
+            </style>
+            
+          <div id="c1">
+        
+                
+                <table
+                cellspacing="0px"
+                bgcolor="white"
+                border="1px solid black"
+                >
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                    
+                    
+                    
+                    
+                    
+
+                </table>
+            </div>
+           
+              <div id="c2">
+                                  <table
+                cellspacing="0px"
+                bgcolor="white"
+                border="1px solid black"
+                >
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                    
+                    
+                    
+                    
+                    
+
+                </table>
+              </div>
+              
+                            <div id="c3">
+                                  <table
+                cellspacing="0px"
+                bgcolor="white"
+                border="1px solid black"
+                >
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                    
+                    
+                    
+                    
+                    
+
+                </table>
+              </div>
+              
+                                          <div id="c4">
+                                  <table
+                cellspacing="0px"
+                bgcolor="white"
+                border="1px solid black"
+                >
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                    
+                    
+                    
+                    
+                    
+
+                </table>
+              </div>
+              
+            <!--  <style>
+                #numeroSorteados{
+                    position: absolute;
+                    top: 2500;
+                }
+              </style>
+              
+<table id="numeroSorteados">
+                  
+<td>
+    
+</td>
+
+<td>
+                      
+ </td>
+ 
+                   <td>
+                      
+                  </td>
+                  
+                                    <td>
+                      
+                  </td>
+                  
+                                    <td>
+                      
+                  </td>
+                  
+                                    <td>
+                      
+                  </td>
+                  
+                                    <td>
+                      
+                  </td>
+                  
+                                    <td>
+                      
+                  </td>
+                  
+                                    <td>
+                      
+                  </td>
+                  
+                  
+                                    <td>
+                      
+                  </td>
+                  
+                  
+                                    <td>
+                      
+                  </td>
+                  
+                  
+                      
+                 
+                      
+                 
+                  
+                  
+ </table>-->
+
+
+            
+            <img id="btnJogar"
+            src="image/play2.png"
+            width="185px"
+            height="200px"
+            
+            
+                  
+            onclick="iniciar()"> 
+            
+            <script>
+            
+            var pararMudarBolas1 = false;
+            
+           function mudarBolas1(){
+               
+               var bolas = document.getElementById('bolas');
+               
+               //style.backgroundImage = "url('img_tree.png')";
+            
+            setInterval(()=>bolas.style.backgroundImage = "url('image/bolas1.png')",500);
+            
+            
+            
+            setInterval(()=>bolas.style.backgroundImage = "url('image/bolas2.png')",1000);
+            
+            
+            
+           setInterval(()=>bolas.style.backgroundImage = "url('image/bolas3.png')",1500);
+            
+           
+       /*if(pararMudarBolas1===true){
+                    mb1.clearInterval();
+                    mb2.clearInterval();
+                    mb3.clearInterval();
+                                    
+                    
+                    //clearInterval(timer);
+               
+                }*/
+            
+            
+           }
+               
+           
+           
+           window.addEventListener("load",mudarBolas1);
+            
+           
+            
+
+            
+            
+            var x= 880;
+            var y = 330
+
+            
+            var n1 = Math.floor(Math.random()*100);
+            n1= n1+1;
+                        var n2 = Math.floor(Math.random()*100);
+            n2= n2+1;
+                        var n3 = Math.floor(Math.random()*100);
+            n3= n3+1;
+                        var n4 = Math.floor(Math.random()*100);
+            n4= n4+1;
+                        var n5 = Math.floor(Math.random()*100);
+            n5= n5+1;
+                        var n6 = Math.floor(Math.random()*100);
+            n6= n6+1;
+                        var n7 = Math.floor(Math.random()*100);
+            n7= n7+1;
+                        var n8 = Math.floor(Math.random()*100);
+            n8= n8+1;
+                        var n9 = Math.floor(Math.random()*100);
+            n9= n9+1;
+                        var n10 = Math.floor(Math.random()*100);
+            n10= n10+1;
+                        var n11 = Math.floor(Math.random()*100);
+            n11= n11+1;
+                        var n12 = Math.floor(Math.random()*100);
+            n12= n12+1;
+            
+           var n13 = Math.floor(Math.random()*100);
+           n13=n13+1;
+           
+                      var n14 = Math.floor(Math.random()*100);
+           n14=n14+1;
+            
+                                  var n15 = Math.floor(Math.random()*100);
+           n15=n15+1;
+           
+                                             var n16 = Math.floor(Math.random()*100);
+           n16=n16+1;
+           
+                                                        var n17 = Math.floor(Math.random()*100);
+           n17=n17+1;
+            
+                                                                    var n18 = Math.floor(Math.random()*100);
+           n18=n18+1;
+            
+            
+                                                                                var n19 = Math.floor(Math.random()*100);
+           n19=n19+1;
+            
+            
+                                                                                var n20 = Math.floor(Math.random()*100);
+           n20=n20+1;
+            
+                                                                                            var n21 = Math.floor(Math.random()*100);
+           n21=n21+1;
+            
+            
+                                                                    var n22 = Math.floor(Math.random()*100);
+           n22=n22+1;
+            
+                                                                    var n23 = Math.floor(Math.random()*100);
+           n23=n23+1;
+            
+            
+                                                                                var n24= Math.floor(Math.random()*100);
+           n24=n24+1;
+            
+            
+                                                                                var n25= Math.floor(Math.random()*100);
+           n25=n25+1;
+            
+                                                                                            var n26 = Math.floor(Math.random()*100);
+           n26=n26+1;
+           
+           
+                                                                               var n27 = Math.floor(Math.random()*100);
+           n27=n27+1;
+            
+            
+                                                                                var n28= Math.floor(Math.random()*100);
+           n28=n28+1;
+            
+            
+                                                                                var n29= Math.floor(Math.random()*100);
+           n29=n29+1;
+            
+                                                                                            var n30= Math.floor(Math.random()*100);
+           n30=n30+1;
+            
+            
+            
+            var r= 10;
+            var r2=10;
+            
+            var aux1 = false;
+            var aux2 = false;
+            var aux3 = false;
+            var aux4 = false;
+            var aux5 = false;
+            var aux6 = false;
+            var aux7 = false;
+            var aux8 = false;
+            var aux9 = false;
+            var aux10 = false;
+            var aux11 = false;
+            var aux12 = false;
+            var aux13 = false;
+            var aux14 = false;
+            var aux15 = false;
+            var aux16 = false;
+            var aux17 = false;
+            var aux17 = false;
+            var aux18 = false;
+            var aux19 = false;
+            var aux20 = false;
+            var aux21 = false;
+            var aux22 = false;
+            var aux23 = false;
+            var aux24 = false;
+            var aux25 = false;
+            var aux26 = false;
+            var aux27 = false;
+            var aux28 = false;
+            var aux29 = false;
+            var aux30 = false;
+            
+            
+            var num1 = new Array();
+            var num2 = new Array();
+            var num3 = new Array();
+            var num4 = new Array();
+            
+             var numeroSorteados=new Array();
+
+numeroSorteados[0]=n1;
+numeroSorteados[1]=n2;
+numeroSorteados[2]=n3;
+numeroSorteados[3]=n4;
+numeroSorteados[4]=n5;
+numeroSorteados[5]=n6;
+numeroSorteados[6]=n7;
+numeroSorteados[7]=n8;
+numeroSorteados[8]=n9;
+numeroSorteados[9]=n10;
+numeroSorteados[10]=n11;
+numeroSorteados[11]=n12;
+numeroSorteados[12]=n13;
+numeroSorteados[13]=n14;
+numeroSorteados[14]=n15;
+numeroSorteados[15]=n16;
+numeroSorteados[16]=n17;
+numeroSorteados[17]=n18;
+numeroSorteados[18]=n19;
+numeroSorteados[19]=n20;
+numeroSorteados[20]=n21;
+numeroSorteados[21]=n22;
+numeroSorteados[22]=n23;
+numeroSorteados[23]=n24;
+numeroSorteados[24]=n25;
+numeroSorteados[25]=n26;
+numeroSorteados[26]=n27;
+numeroSorteados[27]=n28;
+numeroSorteados[28]=n29;
+numeroSorteados[29]=n30;
+
+/*window.document.getElementById('b1').innerHTML = numeroSorteados[0];
+
+window.document.getElementById('b2').innerHTML = numeroSorteados[1];
+
+window.document.getElementById('b3').innerHTML = numeroSorteados[2];
+
+window.document.getElementById('b4').innerHTML = numeroSorteados[3];
+
+window.document.getElementById('b5').innerHTML = numeroSorteados[4];
+
+window.document.getElementById('b6').innerHTML = numeroSorteados[5];
+
+window.document.getElementById('b7').innerHTML = numeroSorteados[6];
+
+window.document.getElementById('b8').innerHTML = numeroSorteados[7];
+
+window.document.getElementById('b9').innerHTML = numeroSorteados[8];
+
+window.document.getElementById('b10').innerHTML = numeroSorteados[9];
+
+window.document.getElementById('b11').innerHTML = numeroSorteados[10];
+
+window.document.getElementById('b12').innerHTML = numeroSorteados[11];
+
+window.document.getElementById('b13').innerHTML = numeroSorteados[12];
+
+window.document.getElementById('b14').innerHTML = numeroSorteados[13];
+
+window.document.getElementById('b15').innerHTML = numeroSorteados[14];
+
+window.document.getElementById('b16').innerHTML = numeroSorteados[15];
+
+window.document.getElementById('b17').innerHTML = numeroSorteados[16];
+
+window.document.getElementById('b18').innerHTML = numeroSorteados[17];
+
+window.document.getElementById('b19').innerHTML = numeroSorteados[18];
+
+window.document.getElementById('b20').innerHTML = numeroSorteados[19];
+
+window.document.getElementById('b21').innerHTML = numeroSorteados[20];
+
+window.document.getElementById('b22').innerHTML = numeroSorteados[21];
+
+window.document.getElementById('b23').innerHTML = numeroSorteados[22];
+
+window.document.getElementById('b24').innerHTML = numeroSorteados[23];
+
+window.document.getElementById('b25').innerHTML = numeroSorteados[24];
+
+window.document.getElementById('b26').innerHTML = numeroSorteados[25];
+
+window.document.getElementById('b27').innerHTML = numeroSorteados[26];
+
+window.document.getElementById('b28').innerHTML = numeroSorteados[27];
+
+window.document.getElementById('b29').innerHTML = numeroSorteados[28];
+
+window.document.getElementById('b30').innerHTML = numeroSorteados[29];*/
+
+console.log('Numeros Sorteados');
+/*numeroSorteados.forEach(function(numeroSorteados) {
+    console.log(numeroSorteados);
+});*/
+
+
+/*numeroSorteados.forEach(function(numeroSorteados) {
+  console.log(`%c${numeroSorteados}`, 'color: blue; border: 1px solid black');
+  
+
+});*/
+
+
+/*for(i=0;<15;i++){
+    if(num1[i]===numeroSorteados[i]){
+        window.document.querySelectorAll('td')[i].style.backgroundColor= 'blue';
+    }
+}*/
+
+
+/*numeroSorteados.forEach(function(numeroSorteados) {
+    console.log(numeroSorteados);
+});*/
+
+
+//console.log(numeroSorteados[0]);
+
+            
+            
+
+          /*  numeroSorteados[0]= n1;
+            numeroSorteados[1]= n2;
+            numeroSorteados[2]= n3;
+            numeroSorteados[3]= n4;
+            numeroSorteados[4]= n5;
+            numeroSorteados[5]= n6;
+            numeroSorteados[6]= n7;
+            numeroSorteados[7]= n8;
+            numeroSorteados[8]= n9;
+            numeroSorteados[9]= n11;
+            numeroSorteados[11]= n12;
+            numeroSorteados[12]= n13;
+            numeroSorteados[13]= n14;
+            numeroSorteados[14]= n15;
+            numeroSorteados[15]= n16;
+            numeroSorteados[16]= n17;
+            numeroSorteados[17]= n18;
+            numeroSorteados[18]= n19;
+            numeroSorteados[19]= n20;
+            numeroSorteados[21]= n22;
+            numeroSorteados[22]= n23;
+            numeroSorteados[23]= n24;
+            numeroSorteados[24]= n25;
+            numeroSorteados[25]= n26;
+            numeroSorteados[26]= n27;
+            numeroSorteados[27]= n28;
+            numeroSorteados[28]= n29;
+            numeroSorteados[29]= n30;*/
+            
+     /*function mostrarNumeroSorteados(){
+                
+                for(i=0;i<30;i++){
+                    
+                    numeroSorteados[i]=
+                    
+                }
+            }*/
+            
+           
+            
+
+        
+           
+           function gerarNumeros1(){
+               
+               for(i=0;i<15;i++){
+                   num1[i]=Math.floor(Math.random()*100);
+                   num1[i]= num1[i]+1;
+				   
+
+                   
+                   
+                  document.querySelectorAll('td')[0].innerHTML='<p style="font-size:100px">'+num1[0]+'</p>';
+                                    document.querySelectorAll('td')[1].innerHTML='<p style="font-size:100px">'+num1[1]+'</p>';
+                                                      document.querySelectorAll('td')[2].innerHTML='<p style="font-size:100px">'+num1[2]+'</p>';
+                                    document.querySelectorAll('td')[3].innerHTML='<p style="font-size:100px">'+num1[3]+'</p>';
+                                    document.querySelectorAll('td')[4].innerHTML='<p style="font-size:100px">'+num1[4]+'</p>';
+                                    document.querySelectorAll('td')[5].innerHTML='<p style="font-size:100px">'+num1[5]+'</p>';
+                                                      document.querySelectorAll('td')[6].innerHTML='<p style="font-size:100px">'+num1[6]+'</p>';
+                                    document.querySelectorAll('td')[7].innerHTML='<p style="font-size:100px">'+num1[7]+'</p>';
+                                
+                                    document.querySelectorAll('td')[8].innerHTML='<p style="font-size:100px">'+num1[8]+'</p>';
+                                                      document.querySelectorAll('td')[9].innerHTML='<p style="font-size:100px">'+num1[9]+'</p>';
+                                    document.querySelectorAll('td')[10].innerHTML='<p style="font-size:100px">'+num1[10]+'</p>';
+                                    document.querySelectorAll('td')[11].innerHTML='<p style="font-size:100px">'+num1[11]+'</p>';
+                                    document.querySelectorAll('td')[12].innerHTML='<p style="font-size:100px">'+num1[12]+'</p>';
+                                                      document.querySelectorAll('td')[13].innerHTML='<p style="font-size:100px">'+num1[13]+'</p>';
+                                    document.querySelectorAll('td')[14].innerHTML='<p style="font-size:100px">'+num1[14]+'</p>';
+                                    
+              
+                       
+                   
+
+              }
+              
+           }
+              
+             
+              
+            
+           
+           
+            function gerarNumeros2(){
+               
+               for(i=0;i<15;i++){
+                   num2[i]=Math.floor(Math.random()*100);
+                   num2[i]= num2[i]+1;
+                 
+                 
+                                  document.querySelectorAll('td')[15].innerHTML='<p style="font-size:100px">'+num2[0]+'</p>';
+                                    document.querySelectorAll('td')[16].innerHTML='<p style="font-size:100px">'+num2[1]+'</p>';
+                                                      document.querySelectorAll('td')[17].innerHTML='<p style="font-size:100px">'+num2[2]+'</p>';
+                                    document.querySelectorAll('td')[18].innerHTML='<p style="font-size:100px">'+num2[3]+'</p>';
+                                    document.querySelectorAll('td')[19].innerHTML='<p style="font-size:100px">'+num2[4]+'</p>';
+                                    document.querySelectorAll('td')[20].innerHTML='<p style="font-size:100px">'+num2[5]+'</p>';
+                                                      document.querySelectorAll('td')[21].innerHTML='<p style="font-size:100px">'+num2[6]+'</p>';
+																				 document.querySelectorAll('td')[22].innerHTML='<p style="font-size:100px">'+num2[7]+'</p>';
+                                                                                                                                   document.querySelectorAll('td')[23].innerHTML='<p style="font-size:100px">'+num2[8]+'</p>';
+                       
+                                                                             document.querySelectorAll('td')[24].innerHTML='<p style="font-size:100px">'+num2[9]+'</p>';
+                                                                                                                                   document.querySelectorAll('td')[25].innerHTML='<p style="font-size:100px">'+num2[10]+'</p>';
+                       
+                                                                             document.querySelectorAll('td')[26].innerHTML='<p style="font-size:100px">'+num2[11]+'</p>';
+                                                                                                                                   document.querySelectorAll('td')[27].innerHTML='<p style="font-size:100px">'+num2[12]+'</p>';
+                                                                                                                                                                               document.querySelectorAll('td')[28].innerHTML='<p style="font-size:100px">'+num2[13]+'</p>';
+                       
+                       
+                                                                             document.querySelectorAll('td')[29].innerHTML='<p style="font-size:100px">'+num2[14]+'</p>';
+                                                                             
+                
+                                                                              
+                       
+                 
+              }
+            
+            
+           }
+           
+    
+             function gerarNumeros3(){
+               
+               for(i=0;i<15;i++){
+                   num3[i]=Math.floor(Math.random()*100);
+                   num3[i]= num3[i]+1;
+                 
+                 
+                                  document.querySelectorAll('td')[30].innerHTML='<p style="font-size:100px">'+num3[0]+'</p>';
+                                    document.querySelectorAll('td')[31].innerHTML='<p style="font-size:100px">'+num3[1]+'</p>';
+                                                      document.querySelectorAll('td')[32].innerHTML='<p style="font-size:100px">'+num3[2]+'</p>';
+                                    document.querySelectorAll('td')[33].innerHTML='<p style="font-size:100px">'+num3[3]+'</p>';
+                                    document.querySelectorAll('td')[34].innerHTML='<p style="font-size:100px">'+num3[4]+'</p>';
+                                    document.querySelectorAll('td')[35].innerHTML='<p style="font-size:100px">'+num3[5]+'</p>';
+                                                      document.querySelectorAll('td')[36].innerHTML='<p style="font-size:100px">'+num3[6]+'</p>';
+                                                                             document.querySelectorAll('td')[37].innerHTML='<p style="font-size:100px">'+num3[7]+'</p>';
+                                                                                                                                   document.querySelectorAll('td')[38].innerHTML='<p style="font-size:100px">'+num3[8]+'</p>';
+                       
+                                                                             document.querySelectorAll('td')[39].innerHTML='<p style="font-size:100px">'+num2[9]+'</p>';
+                                                                                                                                   document.querySelectorAll('td')[40].innerHTML='<p style="font-size:100px">'+num3[10]+'</p>';
+                       
+                                                                             document.querySelectorAll('td')[41].innerHTML='<p style="font-size:100px">'+num3[11]+'</p>';
+                                                                                                                                   document.querySelectorAll('td')[42].innerHTML='<p style="font-size:100px">'+num3[12]+'</p>';
+                                                                                                                                                                               document.querySelectorAll('td')[43].innerHTML='<p style="font-size:100px">'+num3[13]+'</p>';
+                       
+                       
+                                                                             document.querySelectorAll('td')[44].innerHTML='<p style="font-size:100px">'+num2[14]+'</p>';
+                                                                                   
+                               
+                                                                             
+                       
+                 
+              }
+            
+            
+           }
+           
+    
+                   
+             function gerarNumeros4(){
+               
+               for(i=0;i<15;i++){
+                   num4[i]=Math.floor(Math.random()*100);
+                   num4[i]= num4[i]+1;
+                 
+                 
+                                  document.querySelectorAll('td')[45].innerHTML='<p style="font-size:100px">'+num4[0]+'</p>';
+                                    document.querySelectorAll('td')[46].innerHTML='<p style="font-size:100px">'+num4[1]+'</p>';
+                                                      document.querySelectorAll('td')[47].innerHTML='<p style="font-size:100px">'+num4[2]+'</p>';
+                                    document.querySelectorAll('td')[48].innerHTML='<p style="font-size:100px">'+num4[3]+'</p>';
+                                    document.querySelectorAll('td')[49].innerHTML='<p style="font-size:100px">'+num4[4]+'</p>';
+                                    document.querySelectorAll('td')[50].innerHTML='<p style="font-size:100px">'+num4[5]+'</p>';
+                                                      document.querySelectorAll('td')[51].innerHTML='<p style="font-size:100px">'+num4[6]+'</p>';
+                                                                             document.querySelectorAll('td')[52].innerHTML='<p style="font-size:100px">'+num4[7]+'</p>';
+                                                                                                                                   document.querySelectorAll('td')[53].innerHTML='<p style="font-size:100px">'+num4[8]+'</p>';
+                       
+                                                                             document.querySelectorAll('td')[54].innerHTML='<p style="font-size:100px">'+num4[9]+'</p>';
+                                                                                                                                   document.querySelectorAll('td')[55].innerHTML='<p style="font-size:100px">'+num4[10]+'</p>';
+                       
+                                                                             document.querySelectorAll('td')[56].innerHTML='<p style="font-size:100px">'+num4[11]+'</p>';
+                                                                                                                                   document.querySelectorAll('td')[57].innerHTML='<p style="font-size:100px">'+num4[12]+'</p>';
+                                                                                                                                                                               document.querySelectorAll('td')[58].innerHTML='<p style="font-size:100px">'+num4[13]+'</p>';
+                       
+                       
+                                                                             document.querySelectorAll('td')[59].innerHTML='<p style="font-size:100px">'+num4[14]+'</p>';
+             
+                                                                     
+                       
+                 
+              }
+            
+            
+           }
+           
+               
+    
+          window.addEventListener("load",gerarNumeros1);
+          
+          window.addEventListener("load",gerarNumeros2);
+          
+          window.addEventListener("load",gerarNumeros3);
+          
+          window.addEventListener("load",gerarNumeros4);
+          
+          
+            
+/*function marcarNumeros(){
+    
+    
+     
+
+
+
+
+
+          
+} */
+
+
+           window.document.getElementById('b1').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+          window.document.getElementById('b2').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+        window.document.getElementById('b3').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+          window.document.getElementById('b4').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+        window.document.getElementById('b5').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+          window.document.getElementById('b6').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+                   window.document.getElementById('b7').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+          window.document.getElementById('b8').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+            
+           window.document.getElementById('b9').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+          window.document.getElementById('b10').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+        window.document.getElementById('b11').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+          window.document.getElementById('b12').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+        window.document.getElementById('b13').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+          window.document.getElementById('b14').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+                   window.document.getElementById('b15').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+          window.document.getElementById('b16').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+                       window.document.getElementById('b17').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+          window.document.getElementById('b18').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+        window.document.getElementById('b19').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+          window.document.getElementById('b20').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+        window.document.getElementById('b21').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+          window.document.getElementById('b22').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+                   window.document.getElementById('b23').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+          window.document.getElementById('b24').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+            
+
+           window.document.getElementById('b25').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+          window.document.getElementById('b26').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+        window.document.getElementById('b27').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+          window.document.getElementById('b28').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+        window.document.getElementById('b29').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+          window.document.getElementById('b30').style.backgroundColor='#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+                   
+            
+
+
+
+
+
+    
+             
+             
+         
+
+
+
+
+            
+
+
+            
+                //mover bola1
+              function start(){
+                    
+        
+                
+                r=r-10;
+                
+
+                                            var b1 =   document.getElementById('b1');
+                
+                    var b2 =document.getElementById('b2');
+                
+                
+                    var b3 = document.getElementById('b3');
+                
+                    var b4 = document.getElementById('b4');
+                    
+                    var b5 = document.getElementById('b5');
+                                  
+                    var b6 = document.getElementById('b6');
+                    
+                    var b7 = document.getElementById('b7');
+                    
+                    var b8 = document.getElementById('b8');
+                
+                    var b9 = document.getElementById('b9');
+                    
+                    var b10 =document .getElementById('b10');
+                    
+                var b11 =document .getElementById('b11');
+                
+                 var b12 =document .getElementById('b12');
+                 
+                var b13 =document .getElementById('b13');
+                
+                var b14 =document .getElementById('b14');
+                
+                                var b15 =document .getElementById('b15');
+                                
+                                                                var b16 =document .getElementById('b16');
+                
+                var b17 =document .getElementById('b17');
+                                var b18 =document .getElementById('b17');
+                                
+                                var b18 =document .getElementById('b18');
+                
+                var b19 =document .getElementById('b19');
+                                var b20 =document .getElementById('b20');
+                
+                                    var b20=document .getElementById('b20');
+                    
+                var b21 =document .getElementById('b21');
+                
+                 var b22 =document .getElementById('b22');
+                 
+                var b23 =document .getElementById('b23');
+                
+                var b24 =document .getElementById('b24');
+                
+                var b25=document .getElementById('b25');
+                                
+                var b26 =document .getElementById('b26');
+                
+                var b27 =document .getElementById('b27');
+                var b28 =document .getElementById('b28');
+                var b29 =document .getElementById('b29');
+                
+                var b30 =document .getElementById('b30');
+
+                
+                
+                    b1.style.visibility = "visible"
+                    
+                    
+                    
+                    b1.innerHTML=n1;
+                    //console.log(n1);
+                    
+                 // numeroSorteados[0]=n1;
+                  
+            
+                    
+                    
+                        
+                
+                    
+                   // b1.style.left=1000;
+            
+    
+                    
+                    //function mostrarb1(){
+                       // b1.style.left=1000;
+                  //  }
+                    
+                    //setInterval(()=>alert('b1'),13000);
+                
+                    
+                     if(x>500 && aux1===false){     
+                    
+                    
+                    
+        
+                         x=x-10;
+                         
+                
+                    
+                    //n1.par
+                    
+                 
+                
+                
+                   b1.style.left=x+"px";
+                   
+                                                   //   b1.style.transform="rotate"+'('+r+'deg'+')';
+                    
+                    
+                      
+                } 
+                else if(x<501 && y<1600){
+                     
+                    aux1=true;
+                    y= y+10;
+                    
+                  b1.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b1.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   //console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if(y<=1600 && x<1250 && aux1===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b1.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b1.style.left=x+"px";
+                    b1.style.transform="rotate(0deg)";
+                    
+                    
+                  // clearInterval(move);
+                
+            
+                }
+                    
+                }
+                
+                
+                 //mover bola2
+                function start2(){
+                b2.style.visibility = "visible"
+                  if(x>501 && aux2===false){     
+                   b2.innerHTML = n2;
+                                    //   b2.style.backgroundColor='#;
+                    
+                         x=x-10;
+                         
+                                  b2.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b2.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<1600){
+                     
+                    aux2=true;
+                    y= y+10;
+                    
+                  b2.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b2.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if(y<=1600 && x<1130 && aux2===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b2.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b2.style.left=x+"px";
+                  //  console.log('teste');
+                  b2.style.transform="rotate(0deg)";
+                 
+                }
+                    
+                
+                 }
+                 
+                                  //mover bola3
+                 function start3(){
+                                         b3.style.visibility = "visible"
+                  if(x>501 && aux3===false){     
+                   b3.innerHTML = n3;
+                         x=x-10;
+                         
+                                b3.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b3.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<1600){
+                     
+                    aux3=true;
+                    y= y+10;
+                    
+                  b3.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b3.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if(y<=1600 && x<995 && aux3===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b3.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b3.style.left=x+"px";
+                  //  console.log('teste');
+                  b3.style.transform="rotate(0deg)";
+                }
+                    
+                
+                 }
+                 
+                 
+                    //mover bola4
+                 function start4(){
+                                         b4.style.visibility = "visible"
+                  if(x>501 && aux4===false){     
+                   b4.innerHTML = n4;
+                         x=x-10;
+                         
+                                b4.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b4.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<1600){
+                     
+                    aux4=true;
+                    y= y+10;
+                    
+                  b4.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b4.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if(y<=700 && x<880 && aux4===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b4.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b4.style.left=x+"px";
+                  //  console.log('teste');
+                  b4.style.transform="rotate(0deg)";
+                }
+                    
+                
+                 }
+                 
+                                     //mover bola5
+                 function start5(){
+                                         b5.style.visibility = "visible"
+                  if(x>500 && aux5===false){     
+                   b5.innerHTML = n5;
+                         x=x-10;
+                         
+                                b5.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b5.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<1600){
+                     
+                    aux5=true;
+                    y= y+10;
+                    
+                  b5.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b5.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if(y<=1600 && x<855 && aux5===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b5.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b5.style.left=x+"px";
+                  //  console.log('teste');
+                  b5.style.transform="rotate(0deg)";
+                }
+                    
+                
+                 }
+                 
+                                                      //mover bola6
+                 function start6(){
+                                         b6.style.visibility = "visible"
+                  if(x>500 && aux6===false){     
+                   b6.innerHTML = n6;
+                         x=x-10;
+                         
+                                b6.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b6.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<1600){
+                     
+                    aux6=true;
+                    y= y+10;
+                    
+                  b6.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b6.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if(y<=1600 && x<720 && aux6===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b6.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b6.style.left=x+"px";
+                  //  console.log('teste');
+                  b6.style.transform="rotate(0deg)";
+                }
+                    
+                
+                 }
+            
+            // mover bola7
+                function start7(){
+                     
+                
+                                         
+                                         b7.style.visibility = "visible"
+                                         
+                    b7.innerHTML= n7;
+                                         
+                  if(x>500 && aux7===false){     
+                  
+                         
+                                b7.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b7.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1450){
+                     
+                    aux7=true;
+                    y= y+10;
+                    
+                  b7.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b7.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+               // b7.style.left='1150px';
+                
+                } else if( x<1150 && aux7===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b7.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b7.style.left=x+"px";
+                  //  console.log('teste');
+                  b7.style.transform="rotate(0deg)"
+                 
+                  
+                 // b8.style.visibility='visible';
+                }
+                    
+                
+                 }
+            
+            
+                 // mover bola8
+               function start8(){
+                     
+                
+                                         
+                                         b8.style.visibility = "visible"
+                                         
+                    b8.innerHTML= n8;
+                                         
+                  if(x>500 && aux8===false){     
+                  
+                         
+                                b8.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b8.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1450){
+                     
+                    aux8=true;
+                    y= y+10;
+                    
+                  b8.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b8.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+               // b7.style.left='1150px';
+                } else if( x<1150 && aux8===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b8.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b8.style.left=x+"px";
+                  //  console.log('teste');
+                  b8.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+                b7.style.left='1150px';
+                              // mover bola9
+                function start9(){
+                     
+                
+                                         
+                                         b9.style.visibility = "visible"
+                                         
+                    b9.innerHTML= n9;
+                                         
+                  if(x>500 && aux9===false){     
+                  
+                         
+                                b9.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b9.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<1450){
+                     
+                    aux9=true;
+                    y= y+10;
+                    
+                  b9.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b9.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if(x<1250 && aux9===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b9.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b9.style.left=x+"px";
+                  //  console.log('teste');
+                  b9.style.transform="rotate(0deg)"
+                  //clearInterval(move9);
+                 // b9.style.left='980px';
+                 // b9.style.top='3000px';
+                 
+                }
+                    //clearInterval(move9);
+                    //b9.style.top='2000px';
+            
+                 
+                 }
+            
+            
+                         
+                              // mover bola10
+             function start10(){
+                     
+                
+                                         
+                                         b10.style.visibility = "visible"
+                                         
+                    b10.innerHTML= n10;
+                                         
+                  if(x>500 && aux10===false){     
+                  
+                         
+                                b10.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b10.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1400){
+                     
+                    aux10=true;
+                    y= y+10;
+                    
+                  b10.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b10.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<880 && aux10===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b10.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b10.style.left=x+"px";
+                  //  console.log('teste');
+                  b10.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+            
+                                          // mover bola11
+               function start11(){
+                     
+                
+                                         
+                                         b11.style.visibility = "visible"
+                                         
+                    b11.innerHTML= n11;
+                                         
+                  if(x>500 && aux11===false){     
+                  
+                         
+                                b11.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b11.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1450){
+                     
+                    aux11=true;
+                    y= y+10;
+                    
+                  b11.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b11.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<1080 && aux11===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b11.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b11.style.left=x+"px";
+                  //  console.log('teste');
+                  b11.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+            
+                 // mover bola12
+               function start12(){
+                     
+                
+                                         
+                                         b12.style.visibility = "visible"
+                                         
+                    b12.innerHTML= n12;
+                                         
+                  if(x>500 && aux12===false){     
+                  
+                         
+                                b12.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b12.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1350){
+                     
+                    aux12=true;
+                    y= y+10;
+                    
+                  b12.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b12.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<980 && aux12===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b12.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b12.style.left=x+"px";
+                  //  console.log('teste');
+                  b12.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+            
+                // mover bola13
+                function start13(){
+                     
+                
+                                         
+                                         b13.style.visibility = "visible"
+                                         
+                    b13.innerHTML= n13;
+                                         
+                  if(x>500 && aux13===false){     
+                  
+                         
+                                b13.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b13.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1350){
+                     
+                    aux13=true;
+                    y= y+10;
+                    
+                  b13.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b13.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<880 && aux13===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b13.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b13.style.left=x+"px";
+                  //  console.log('teste');
+                  b13.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+                 
+                                 // mover bola14
+                function start14(){
+                     
+                
+                                         
+                                         b14.style.visibility = "visible"
+                                         
+                    b14.innerHTML= n14;
+                                         
+                  if(x>500 && aux14===false){     
+                  
+                         
+                                b14.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b14.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1350){
+                     
+                    aux14=true;
+                    y= y+10;
+                    
+                  b14.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b14.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if(x<710 && aux14===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b14.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b14.style.left=x+"px";
+                  //  console.log('teste');
+                  b14.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+                 
+                                  
+                                 // mover bola15
+                function start15(){
+                     
+                
+                                         
+                                         b15.style.visibility = "visible"
+                                         
+                    b15.innerHTML= n15;
+                                         
+                  if(x>500 && aux15===false){     
+                  
+                         
+                                b15.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b15.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1350){
+                     
+                    aux15=true;
+                    y= y+10;
+                    
+                  b15.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b15.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<680 && aux15===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b15.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b15.style.left=x+"px";
+                  //  console.log('teste');
+                  b15.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+            
+                                             // mover bola16
+                function start16(){
+                     
+                
+                                         
+                                         b16.style.visibility = "visible"
+                                         
+                    b16.innerHTML= n16;
+                                         
+                  if(x>500 && aux16===false){     
+                  
+                         
+                                b16.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b16.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1250){
+                     
+                    aux16=true;
+                    y= y+10;
+                    
+                  b16.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b16.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<1280 && aux16===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b16.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b16.style.left=x+"px";
+                  //  console.log('teste');
+                  b16.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+            
+                                                         // mover bola17
+                function start17(){
+                     
+                
+                                         
+                                         b17.style.visibility = "visible"
+                                         
+                    b17.innerHTML= n17;
+                                         
+                  if(x>500 && aux17===false){     
+                  
+                         
+                                b17.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b17.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1250){
+                     
+                    aux17=true;
+                    y= y+10;
+                    
+                  b17.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b17.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<1080 && aux17===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b17.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b17.style.left=x+"px";
+                  //  console.log('teste');
+                  b17.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+            
+            
+            
+            
+            
+            
+            
+                                                                     // mover bola18
+                function start18(){
+                     
+                
+                                         
+                                         b18.style.visibility = "visible"
+                                         
+                    b18.innerHTML= n18;
+                                         
+                  if(x>500 && aux18===false){     
+                  
+                         
+                                b18.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b18.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1250){
+                     
+                    aux18=true;
+                    y= y+10;
+                    
+                  b18.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b18.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<980 && aux18===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b18.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b18.style.left=x+"px";
+                  //  console.log('teste');
+                  b18.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+                                                                                                         // mover bola19
+                function start19(){
+                     
+                
+                                         
+                                         b19.style.visibility = "visible"
+                                         
+                    b19.innerHTML= n19;
+                                         
+                  if(x>500 && aux19===false){     
+                  
+                         
+                                b19.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b19.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1350){
+                     
+                    aux19=true;
+                    y= y+10;
+                    
+                  b19.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b19.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<580 && aux19===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b19.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b19.style.left=x+"px";
+                  //  console.log('teste');
+                  b19.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+            
+            
+            
+            
+                                                                                 // mover bola20
+                function start20(){
+                     
+                
+                                         
+                                         b20.style.visibility = "visible"
+                                         
+                    b20.innerHTML= n20;
+                                         
+                  if(x>500 && aux20===false){     
+                  
+                         
+                                b20.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b20.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1350){
+                     
+                    aux20=true;
+                    y= y+10;
+                    
+                  b20.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b20.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<680 && aux20===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b20.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b20.style.left=x+"px";
+                  //  console.log('teste');
+                  b20.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+
+                                                                                             // mover bola21
+                function start21(){
+                     
+                
+                                         
+                                         b21.style.visibility = "visible"
+                                         
+                    b21.innerHTML= n21;
+                                         
+                  if(x>500 && aux21===false){     
+                  
+                         
+                                b21.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b21.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<1050){
+                     
+                    aux21=true;
+                    y= y+10;
+                    
+                  b21.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b21.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<1050 && aux21===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b21.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b21.style.left=x+"px";
+                  //  console.log('teste');
+                  b21.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+
+            
+                                                                                             // mover bola22
+                function start22(){
+                     
+                
+                                         
+                                         b22.style.visibility = "visible"
+                                         
+                    b22.innerHTML= n22;
+                                         
+                  if(x>500 && aux22===false){     
+                  
+                         
+                                b22.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b22.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1350){
+                     
+                    aux22=true;
+                    y= y+10;
+                    
+                  b22.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b22.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<480 && aux22===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b22.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b22.style.left=x+"px";
+                  //  console.log('teste');
+                  b22.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+
+                                                                                             // mover bola23
+                function start23(){
+                     
+                
+                                         
+                                         b23.style.visibility = "visible"
+                                         
+                    b23.innerHTML= n23;
+                                         
+                  if(x>500 && aux23===false){     
+                  
+                         
+                                b23.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b23.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1050){
+                     
+                    aux23=true;
+                    y= y+10;
+                    
+                  b23.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b23.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<880 && aux23===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b23.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b23.style.left=x+"px";
+                  //  console.log('teste');
+                  b23.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+
+            
+                                                                                             // mover bola24
+                function start24(){
+                     
+                
+                                         
+                                         b24.style.visibility = "visible"
+                                         
+                    b24.innerHTML= n24;
+                                         
+                  if(x>500 && aux24===false){     
+                  
+                         
+                                b24.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b24.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1350){
+                     
+                    aux24=true;
+                    y= y+10;
+                    
+                  b24.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b24.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<780 && aux24===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b24.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b24.style.left=x+"px";
+                  //  console.log('teste');
+                  b24.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+
+                                                                                             // mover bola21
+                function start25(){
+                     
+                
+                                         
+                                         b25.style.visibility = "visible"
+                                         
+                    b25.innerHTML= n25;
+                                         
+                  if(x>500 && aux25===false){     
+                  
+                         
+                                b25.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b25.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1350){
+                     
+                    aux25=true;
+                    y= y+10;
+                    
+                  b25.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b25.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<880 && aux25===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b25.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b25.style.left=x+"px";
+                  //  console.log('teste');
+                  b25.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+
+                                                                                             // mover bola26
+                function start26(){
+                     
+                
+                                         
+                                         b26.style.visibility = "visible"
+                                         
+                    b26.innerHTML= n26;
+                                         
+                  if(x>500 && aux26===false){     
+                  
+                         
+                                b26.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b26.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1350){
+                     
+                    aux26=true;
+                    y= y+10;
+                    
+                  b26.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b26.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<957 && aux26===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b26.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b26.style.left=x+"px";
+                  //  console.log('teste');
+                  b26.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+
+                                                                                             // mover bola27
+                function start27(){
+                     
+                
+                                         
+                                         b27.style.visibility = "visible"
+                                         
+                   b27.innerHTML= n27;
+                                         
+                  if(x>500 && aux27===false){     
+                  
+                         
+                                b27.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b27.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1350){
+                     
+                    aux27=true;
+                    y= y+10;
+                    
+                  b27.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b27.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<950 && aux27===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b27.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b27.style.left=x+"px";
+                  //  console.log('teste');
+                  b27.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+
+            
+            
+                                                                                             // mover bola28
+                function start28(){
+                     
+                
+                                         
+                                         b28.style.visibility = "visible"
+                                         
+                    b28.innerHTML= n28;
+                                         
+                  if(x>500 && aux28===false){     
+                  
+                         
+                                b28.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b28.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1450){
+                     
+                    aux28=true;
+                    y= y+10;
+                    
+                  b28.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b28.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<1120 && aux28===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b28.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b28.style.left=x+"px";
+                  //  console.log('teste');
+                  b28.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+
+                                                                                             // mover bola29
+                function start29(){
+                     
+                
+                                         
+                                         b29.style.visibility = "visible"
+                                         
+                    b29.innerHTML= n29;
+                                         
+                  if(x>500 && aux29===false){     
+                  
+                         
+                                b29.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b29.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1350){
+                     
+                    aux29=true;
+                    y= y+10;
+                    
+                  b29.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b29.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if( x<1270 && aux29===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b29.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b29.style.left=x+"px";
+                  //  console.log('teste');
+                  b29.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+
+                                                                                                         // mover bola30
+                function start30(){
+                     
+                
+                                         
+                                         b30.style.visibility = "visible"
+                                         
+                    b30.innerHTML= n30;
+                                         
+                  if(x>500 && aux30===false){     
+                  
+                         
+                                b30.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b30.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<=1350){
+                     
+                    aux30=true;
+                    y= y+10;
+                    
+                  b30.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b30.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if(x<480 && aux30===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b30.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b30.style.left=x+"px";
+                  //  console.log('teste');
+                  b30.style.transform="rotate(0deg)"
+                  
+
+                }
+                    
+                
+                 }
+            
+
+
+            
+            
+            
+            
+            
+            
+            
+                
+              function iniciar(){
+                  
+                  
+                  
+                  document.getElementById('btnJogar').style.visibility= 'hidden';
+                  
+                var move1 = setInterval(start,10);
+               var move2=setInterval(start2,20);
+               var move3 = setInterval(start3,30);
+               var move4 = setInterval(start4,40);
+                var move5 = setInterval(start5,50);
+                var move6 = setInterval(start6,60);
+               var move7 = setInterval
+                    (start7,70);
+                var move8 = setInterval
+                    (start8,80);
+                var move9 = setInterval
+                    (start9,90);
+              var move10 = setInterval
+                    (start10,100);
+             var move11 = setInterval
+                    (start11,110);
+              var move12 = setInterval
+                    (start12,120);
+              var move13 = setInterval
+                    (start13,130);
+                var move14 = setInterval
+                    (start14,140);
+                var move15 = setInterval
+                    (start15,150);
+                 var move16 = setInterval
+                    (start16,160);
+                var move17 = setInterval
+                    (start17,170);
+                 var move18 = setInterval
+                    (start18,180);
+                var move19 = setInterval
+                    (start19,190);
+                 var move20 = setInterval
+                    (start20,200);
+                 var move21 = setInterval
+                    (start21,210);
+                 var move22 = setInterval
+                    (start22,220);
+                 var move23 = setInterval
+                    (start23,230);
+                var move24 = setInterval
+                    (start24,240);
+                 var move25 = setInterval
+                    (start25,250);
+                var move26 = setInterval
+                    (start26,260);
+                 var move27 = setInterval
+                    (start27,270);
+                 var move28 = setInterval
+                    (start28,280);
+                 var move29 = setInterval
+                    (start29,290);
+                 var move30 = setInterval
+                    (start30,300);  
+                    
+                
+                
+              setInterval(()=>clearInterval(move1)
+              ,3000);
+                
+               setInterval(()=>clearInterval(move2),3000);
+                
+                setInterval(()=>clearInterval(move3),3000);
+                
+                setInterval(()=>clearInterval(move4),3000);
+				
+				window.document.getElementById('b4').style.left = '730px';
+				window.document.getElementById('b4').style.top = '1290px';
+				window.document.getElementById('b4').style.transform = 'rotate(0deg)';
+                
+                setInterval(()=>clearInterval(move5),3000);
+				
+				window.document.getElementById('b5').style.left = '1030px';
+				window.document.getElementById('b5').style.top = '1290px';
+                
+                setInterval(()=>clearInterval(move6)
+				
+				,3000);
+				
+				window.document.getElementById('b6').style.left = '1030px';
+				window.document.getElementById('b6').style.top = '1290px';
+                
+                setInterval(()=>clearInterval(move7),3000);
+				
+				window.document.getElementById('b7').style.left = '630px';
+				window.document.getElementById('b7').style.top = '1090px';
+				
+				
+				setInterval(()=>clearInterval(move8),3000);
+				
+				window.document.getElementById('b8').style.left = '930px';
+				window.document.getElementById('b8').style.top = '1090px';
+				
+				
+				setInterval(()=>clearInterval(move9),3000);
+				
+				window.document.getElementById('b9').style.left = '730px';
+				window.document.getElementById('b9').style.top = '1090px';
+                
+               
+                
+               
+                
+                setInterval(()=>clearInterval(move10),3000);
+                
+                setInterval(()=>clearInterval(move11),3000);
+                
+                setInterval(()=>clearInterval(move12),3000);
+                
+                                setInterval(()=>clearInterval(move13),3000);
+                
+                setInterval(()=>clearInterval(move14),3000);
+                
+                setInterval(()=>clearInterval(move15),3000);
+                
+                setInterval(()=>clearInterval(move16),3000);
+                
+                setInterval(()=>clearInterval(move17),3000);
+                
+                setInterval(()=>clearInterval(move18),3000);
+                
+                setInterval(()=>clearInterval(move19),3000);
+                
+                setInterval(()=>clearInterval(move20),3000);
+                
+                setInterval(()=>clearInterval(move21),3000);
+                
+                setInterval(()=>clearInterval(move22),3000);
+                
+                setInterval(()=>clearInterval(move23),3000);
+                
+                setInterval(()=>clearInterval(move24),3000);
+                
+                setInterval(()=>clearInterval(move25),3000);
+                
+                setInterval(()=>clearInterval(move26),3000);
+                
+                setInterval(()=>clearInterval(move27),3000);
+                
+                setInterval(()=>clearInterval(move28),3000);
+                
+                setInterval(()=>clearInterval(move29),3000);
+                
+                setInterval(()=>clearInterval(move30),3000);
+				
+				
+				console.log('Numeros Sorteados');
+                
+                
+        window.document.getElementById('b1').innerHTML = numeroSorteados[0];
+		
+		console.log(numeroSorteados[0]);
+		
+		
+		window.document.getElementById('b2').innerHTML = numeroSorteados[1];
+		
+		console.log(numeroSorteados[1]);
+		
+		window.document.getElementById('b3').innerHTML = numeroSorteados[2];
+		
+		console.log(numeroSorteados[2]);
+		
+		window.document.getElementById('b4').innerHTML = numeroSorteados[3];
+		
+		console.log(numeroSorteados[3]);
+		
+		window.document.getElementById('b5').innerHTML = numeroSorteados[4];
+		
+		console.log(numeroSorteados[4]);
+		
+		
+		window.document.getElementById('b6').innerHTML = numeroSorteados[5];
+		
+		console.log(numeroSorteados[5]);
+		
+		
+		window.document.getElementById('b7').innerHTML = numeroSorteados[6];
+		
+		console.log(numeroSorteados[6]);
+		
+		window.document.getElementById('b8').innerHTML = numeroSorteados[7];
+		
+		console.log(numeroSorteados[7]);
+		
+		window.document.getElementById('b9').innerHTML = numeroSorteados[8];
+		
+		console.log(numeroSorteados[8]);
+		
+		window.document.getElementById('b10').innerHTML = numeroSorteados[9];
+		
+		console.log(numeroSorteados[9]);
+		
+		
+		window.document.getElementById('b11').innerHTML = numeroSorteados[10];
+		
+		console.log(numeroSorteados[10]);
+		
+		window.document.getElementById('b12').innerHTML = numeroSorteados[11];
+		
+		console.log(numeroSorteados[11]);
+		
+		window.document.getElementById('b13').innerHTML = numeroSorteados[12];
+		
+		console.log(numeroSorteados[12]);
+		
+		window.document.getElementById('b14').innerHTML = numeroSorteados[13];
+		
+		console.log(numeroSorteados[13]);
+		
+		window.document.getElementById('b15').innerHTML = numeroSorteados[14];
+		
+		console.log(numeroSorteados[14]);
+		
+		window.document.getElementById('b16').innerHTML = numeroSorteados[15];
+		
+		console.log(numeroSorteados[15]);
+		
+		window.document.getElementById('b17').innerHTML = numeroSorteados[16];
+		
+		console.log(numeroSorteados[16]);
+		
+		window.document.getElementById('b18').innerHTML = numeroSorteados[17];
+		
+		console.log(numeroSorteados[17]);
+		
+		window.document.getElementById('b19').innerHTML = numeroSorteados[18];
+		
+		console.log(numeroSorteados[18]);
+		
+		window.document.getElementById('b20').innerHTML = numeroSorteados[19];
+		
+		console.log(numeroSorteados[19]);
+		
+		window.document.getElementById('b21').innerHTML = numeroSorteados[20];
+		
+		console.log(numeroSorteados[20]);
+		
+		window.document.getElementById('b22').innerHTML = numeroSorteados[21];
+		
+		console.log(numeroSorteados[21]);
+		
+		window.document.getElementById('b23').innerHTML = numeroSorteados[22];
+		
+		console.log(numeroSorteados[22]);
+		
+		
+		window.document.getElementById('b24').innerHTML = numeroSorteados[23];
+		
+		console.log(numeroSorteados[23]);
+		
+		
+		window.document.getElementById('b25').innerHTML = numeroSorteados[24];
+		
+		console.log(numeroSorteados[24]);
+		
+		window.document.getElementById('b26').innerHTML = numeroSorteados[25];
+		
+		console.log(numeroSorteados[25]);
+		
+		window.document.getElementById('b27').innerHTML = numeroSorteados[26];
+		
+		console.log(numeroSorteados[26]);
+		
+		window.document.getElementById('b28').innerHTML = numeroSorteados[27];
+		
+		console.log(numeroSorteados[27]);
+		
+		window.document.getElementById('b29').innerHTML = numeroSorteados[28];
+		
+		console.log(numeroSorteados[28]);
+		
+		window.document.getElementById('b30').innerHTML = numeroSorteados[29];
+		
+		console.log(numeroSorteados[29]);
+		
+		
+// marca a cartela 1		
+for (let i = 0; i < 15; i++) {
+  if (numeroSorteados.indexOf(num1[i]) !== -1) {
+    console.log(`${num1[i]} está presente no vetor numeroSorteados`);
+    window.document.querySelectorAll('td')[i].style.backgroundColor = 'blue';
+  } else {
+    console.log(`${num1[i]} não está presente no vetor numeroSorteados`);
+  }
+}
+
+// marca a cartela 2
+for (let i = 0; i <15 ; i++) {
+  if (numeroSorteados.indexOf(num2[i]) !== -1) {
+    console.log(`${num2[i]} está presente no vetor numeroSorteados`);
+	
+	
+    window.document.querySelectorAll('td')[i+15].style.backgroundColor = 'blue';
+	
+  } else {
+    console.log(`${num2[i]} não está presente no vetor numeroSorteados`);
+  }
+}
+
+
+// marca a cartela 3
+for (let i = 0; i < 15; i++) {
+  if (numeroSorteados.indexOf(num3[i]) !== -1) {
+    console.log(`${num3[i]} está presente no vetor numeroSorteados`);
+    window.document.querySelectorAll('td')[i+30].style.backgroundColor = 'blue';
+  } else {
+    console.log(`${num3[i]} não está presente no vetor numeroSorteados`);
+  }
+}
+
+// marca a cartela 4
+for (let i = 0; i <15; i++) {
+  if (numeroSorteados.indexOf(num4[i]) !== -1) {
+    console.log(`${num4[i]} está presente no vetor numeroSorteados`);
+    window.document.querySelectorAll('td')[i+45].style.backgroundColor = 'blue';
+  } else {
+    console.log(`${num4[i]} não está presente no vetor numeroSorteados`);
+  }
+}
+
+
+
+
+console.log('Cartela 1');
+
+console.log(num1[0]);
+console.log(num1[1]);
+console.log(num1[2]);
+console.log(num1[3]);
+console.log(num1[4]);
+console.log(num1[5]);
+console.log(num1[6]);
+console.log(num1[7]);
+console.log(num1[8]);
+console.log(num1[9]);
+console.log(num1[10]);
+console.log(num1[11]);
+console.log(num1[12]);
+console.log(num1[13]);
+console.log(num1[14]);
+
+console.log('Cartela 2');
+
+console.log(num2[0]);
+console.log(num2[1]);
+console.log(num2[2]);
+console.log(num2[3]);
+console.log(num2[4]);
+console.log(num2[5]);
+console.log(num2[6]);
+console.log(num2[7]);
+console.log(num2[8]);
+console.log(num2[9]);
+console.log(num2[10]);
+console.log(num2[11]);
+console.log(num2[12]);
+console.log(num2[13]);
+console.log(num2[14]);
+
+console.log('Cartela 3');
+
+console.log(num3[0]);
+console.log(num3[1]);
+console.log(num3[2]);
+console.log(num3[3]);
+console.log(num3[4]);
+console.log(num3[5]);
+console.log(num3[6]);
+console.log(num3[7]);
+console.log(num3[8]);
+console.log(num3[9]);
+console.log(num3[10]);
+console.log(num3[11]);
+console.log(num3[12]);
+console.log(num3[13]);
+console.log(num3[14]);
+
+console.log('Cartela 4');
+
+console.log(num4[0]);
+console.log(num4[1]);
+console.log(num4[2]);
+console.log(num4[3]);
+console.log(num4[4]);
+console.log(num4[5]);
+console.log(num4[6]);
+console.log(num4[7]);
+console.log(num4[8]);
+console.log(num4[9]);
+console.log(num4[10]);
+console.log(num4[11]);
+console.log(num4[12]);
+console.log(num4[13]);
+console.log(num4[14]);
+
+		
+
+		
+		
+                
+ // percorre todos os elementos do vetor numeroSorteados
+
+/*for (var i = 0; i < 5; i++) {
+  // verifica se o elemento atual está presente no vetor num
+  if (num1.indexOf(numeroSorteados[i]) !== -1) {
+    //console.log("O número " + numeroSorteados[i] + " está presente no vetor num.");
+
+	window.document.querySelectorAll('td')[i].style.backgroundColor = 'blue';
+  }
+}*/
+
+            
+            
+           
+
+                 
+                 
+
+                 
+                     /*console.log(numeroSorteados[0]);
+    console.log(numeroSorteados[1]);
+    console.log(numeroSorteados[2]);
+    console.log(numeroSorteados[3]);
+    console.log(numeroSorteados[4]);
+    console.log(numeroSorteados[5]);
+    console.log(numeroSorteados[6]);
+    console.log(numeroSorteados[7]);
+    console.log(numeroSorteados[8]);
+    console.log(numeroSorteados[9]);
+    console.log(numeroSorteados[10]);
+    console.log(numeroSorteados[11]);
+    console.log(numeroSorteados[12]);
+    console.log(numeroSorteados[13]);
+    console.log(numeroSorteados[14]);
+    console.log(numeroSorteados[15]);
+    console.log(numeroSorteados[16]);
+    console.log(numeroSorteados[17]);
+    console.log(numeroSorteados[18]);
+    console.log(numeroSorteados[19]);
+    console.log(numeroSorteados[20]);
+    console.log(numeroSorteados[21]);
+    console.log(numeroSorteados[22]);
+    console.log(numeroSorteados[23]);
+    console.log(numeroSorteados[24]);
+    console.log(numeroSorteados[25]);
+    console.log(numeroSorteados[26]);
+    console.log(numeroSorteados[27]);
+    console.log(numeroSorteados[28]);
+    console.log(numeroSorteados[29]);*/
+    
+    
+   /* if(num1[0]===numeroSorteados[0]
+    || num1[0]===numeroSorteados[1]
+    || num1[0]===numeroSorteados[2]
+    || num1[0]===numeroSorteados[3]
+    || num1[0]===numeroSorteados[4]
+    || num1[0]===numeroSorteados[5]
+    || num1[0]===numeroSorteados[6]
+    || num1[0]===numeroSorteados[7]
+    || num1[0]===numeroSorteados[8]
+    || num1[0]===numeroSorteados[9]
+    || num1[0]===numeroSorteados[10]
+    || num1[0]===numeroSorteados[11]
+    || num1[0]===numeroSorteados[12]
+    || num1[0]===numeroSorteados[13]
+    || num1[0]===numeroSorteados[14]
+    || num1[0]===numeroSorteados[15]
+    || num1[0]===numeroSorteados[16]
+    || num1[0]===numeroSorteados[17]
+    || num1[0]===numeroSorteados[18]
+    || num1[0]===numeroSorteados[19]
+    || num1[0]===numeroSorteados[20]
+    || num1[0]===numeroSorteados[21]
+    || num1[0]===numeroSorteados[22]
+    || num1[0]===numeroSorteados[23]
+    || num1[0]===numeroSorteados[24]
+    || num1[0]===numeroSorteados[25]
+    || num1[0]===numeroSorteados[26]
+    || num1[0]===numeroSorteados[27]
+    || num1[0]===numeroSorteados[28]
+    || num1[0]===numeroSorteados[29]
+    
+    ){
+        window.document.querySelectorAll('td')[0].style.backgroundColor='blue';
+    
+    }
+    
+    if(num1[1]===numeroSorteados[0]
+    || num1[1]===numeroSorteados[1]
+    || num1[1]===numeroSorteados[2]
+    || num1[1]===numeroSorteados[3]
+    || num1[1]===numeroSorteados[4]
+    || num1[1]===numeroSorteados[5]
+    || num1[1]===numeroSorteados[6]
+    || num1[1]===numeroSorteados[7]
+    || num1[1]===numeroSorteados[8]
+    || num1[1]===numeroSorteados[9]
+    || num1[1]===numeroSorteados[10]
+    || num1[1]===numeroSorteados[11]
+    || num1[1]===numeroSorteados[12]
+    || num1[1]===numeroSorteados[13]
+    || num1[1]===numeroSorteados[14]
+    || num1[1]===numeroSorteados[15]
+    || num1[1]===numeroSorteados[16]
+    || num1[1]===numeroSorteados[17]
+    || num1[1]===numeroSorteados[18]
+    || num1[1]===numeroSorteados[19]
+    || num1[1]===numeroSorteados[20]
+    || num1[1]===numeroSorteados[21]
+    || num1[1]===numeroSorteados[22]
+    || num1[1]===numeroSorteados[23]
+    || num1[1]===numeroSorteados[24]
+    || num1[1]===numeroSorteados[25]
+    || num1[1]===numeroSorteados[26]
+    || num1[1]===numeroSorteados[27]
+    || num1[1]===numeroSorteados[28]
+    || num1[1]===numeroSorteados[29]
+    
+    ){
+        window.document.querySelectorAll('td')[1].style.backgroundColor='blue';
+                
+    }
+    
+    
+    if(num1[2]===numeroSorteados[0]
+    || num1[2]===numeroSorteados[1]
+    || num1[2]===numeroSorteados[2]
+    || num1[2]===numeroSorteados[3]
+    || num1[2]===numeroSorteados[4]
+    || num1[2]===numeroSorteados[5]
+    || num1[2]===numeroSorteados[6]
+    || num1[2]===numeroSorteados[7]
+    || num1[2]===numeroSorteados[8]
+    || num1[2]===numeroSorteados[9]
+    || num1[2]===numeroSorteados[10]
+    || num1[2]===numeroSorteados[11]
+    || num1[2]===numeroSorteados[12]
+    || num1[2]===numeroSorteados[13]
+    || num1[2]===numeroSorteados[14]
+    || num1[2]===numeroSorteados[15]
+    || num1[2]===numeroSorteados[16]
+    || num1[2]===numeroSorteados[17]
+    || num1[2]===numeroSorteados[18]
+    || num1[2]===numeroSorteados[19]
+    || num1[2]===numeroSorteados[20]
+    || num1[2]===numeroSorteados[21]
+    || num1[2]===numeroSorteados[22]
+    || num1[2]===numeroSorteados[23]
+    || num1[2]===numeroSorteados[24]
+    || num1[2]===numeroSorteados[25]
+    || num1[2]===numeroSorteados[26]
+    || num1[2]===numeroSorteados[27]
+    || num1[2]===numeroSorteados[28]
+    || num1[2]===numeroSorteados[29]
+    
+    ){
+        window.document.querySelectorAll('td')[2].style.backgroundColor='blue';
+        
+    }
+    
+        if(num1[3]===numeroSorteados[0]
+    || num1[3]===numeroSorteados[1]
+    || num1[3]===numeroSorteados[2]
+    || num1[3]===numeroSorteados[3]
+    || num1[3]===numeroSorteados[4]
+    || num1[3]===numeroSorteados[5]
+    || num1[3]===numeroSorteados[6]
+    || num1[3]===numeroSorteados[7]
+    || num1[3]===numeroSorteados[8]
+    || num1[3]===numeroSorteados[9]
+    || num1[3]===numeroSorteados[10]
+    || num1[3]===numeroSorteados[11]
+    || num1[3]===numeroSorteados[12]
+    || num1[3]===numeroSorteados[13]
+    || num1[3]===numeroSorteados[14]
+    || num1[3]===numeroSorteados[15]
+    || num1[3]===numeroSorteados[16]
+    || num1[3]===numeroSorteados[17]
+    || num1[3]===numeroSorteados[18]
+    || num1[3]===numeroSorteados[19]
+    || num1[3]===numeroSorteados[20]
+    || num1[3]===numeroSorteados[21]
+    || num1[3]===numeroSorteados[22]
+    || num1[3]===numeroSorteados[23]
+    || num1[3]===numeroSorteados[24]
+    || num1[3]===numeroSorteados[25]
+    || num1[3]===numeroSorteados[26]
+    || num1[3]===numeroSorteados[27]
+    || num1[3]===numeroSorteados[28]
+    || num1[3]===numeroSorteados[29]
+    
+    ){
+        window.document.querySelectorAll('td')[3].style.backgroundColor='blue';
+
+    }
+    
+            if(num1[4]===numeroSorteados[0]
+    || num1[4]===numeroSorteados[1]
+    || num1[4]===numeroSorteados[2]
+    || num1[4]===numeroSorteados[3]
+    || num1[4]===numeroSorteados[4]
+    || num1[4]===numeroSorteados[5]
+    || num1[4]===numeroSorteados[6]
+    || num1[4]===numeroSorteados[7]
+    || num1[4]===numeroSorteados[8]
+    || num1[4]===numeroSorteados[9]
+    || num1[4]===numeroSorteados[10]
+    || num1[4]===numeroSorteados[11]
+    || num1[4]===numeroSorteados[12]
+    || num1[4]===numeroSorteados[13]
+    || num1[4]===numeroSorteados[14]
+    || num1[4]===numeroSorteados[15]
+    || num1[4]===numeroSorteados[16]
+    || num1[4]===numeroSorteados[17]
+    || num1[4]===numeroSorteados[18]
+    || num1[4]===numeroSorteados[19]
+    || num1[4]===numeroSorteados[20]
+    || num1[4]===numeroSorteados[21]
+    || num1[4]===numeroSorteados[22]
+    || num1[4]===numeroSorteados[23]
+    || num1[4]===numeroSorteados[24]
+    || num1[4]===numeroSorteados[25]
+    || num1[4]===numeroSorteados[26]
+    || num1[4]===numeroSorteados[27]
+    || num1[4]===numeroSorteados[28]
+    || num1[4]===numeroSorteados[29]
+    
+    ){
+        window.document.querySelectorAll('td')[4].style.backgroundColor='blue';
+        
+                
+    }
+    
+
+            if(num1[5]===numeroSorteados[0]
+    || num1[5]===numeroSorteados[1]
+    || num1[5]===numeroSorteados[2]
+    || num1[5]===numeroSorteados[3]
+    || num1[5]===numeroSorteados[4]
+    || num1[5]===numeroSorteados[5]
+    || num1[5]===numeroSorteados[6]
+    || num1[5]===numeroSorteados[7]
+    || num1[5]===numeroSorteados[8]
+    || num1[5]===numeroSorteados[9]
+    || num1[5]===numeroSorteados[10]
+    || num1[5]===numeroSorteados[11]
+    || num1[5]===numeroSorteados[12]
+    || num1[5]===numeroSorteados[13]
+    || num1[5]===numeroSorteados[14]
+    || num1[5]===numeroSorteados[15]
+    || num1[5]===numeroSorteados[16]
+    || num1[5]===numeroSorteados[17]
+    || num1[5]===numeroSorteados[18]
+    || num1[5]===numeroSorteados[19]
+    || num1[5]===numeroSorteados[20]
+    || num1[5]===numeroSorteados[21]
+    || num1[5]===numeroSorteados[22]
+    || num1[5]===numeroSorteados[23]
+    || num1[5]===numeroSorteados[24]
+    || num1[5]===numeroSorteados[25]
+    || num1[5]===numeroSorteados[26]
+    || num1[5]===numeroSorteados[27]
+    || num1[5]===numeroSorteados[28]
+    || num1[5]===numeroSorteados[29]
+    
+    ){
+        window.document.querySelectorAll('td')[5].style.backgroundColor='blue';
+        
+ 
+    }
+    
+                if(num1[6]===numeroSorteados[0]
+    || num1[6]===numeroSorteados[1]
+    || num1[6]===numeroSorteados[2]
+    || num1[6]===numeroSorteados[3]
+    || num1[6]===numeroSorteados[4]
+    || num1[6]===numeroSorteados[5]
+    || num1[6]===numeroSorteados[6]
+    || num1[6]===numeroSorteados[7]
+    || num1[6]===numeroSorteados[8]
+    || num1[6]===numeroSorteados[9]
+    || num1[6]===numeroSorteados[10]
+    || num1[6]===numeroSorteados[11]
+    || num1[6]===numeroSorteados[12]
+    || num1[6]===numeroSorteados[13]
+    || num1[6]===numeroSorteados[14]
+    || num1[6]===numeroSorteados[15]
+    || num1[6]===numeroSorteados[16]
+    || num1[6]===numeroSorteados[17]
+    || num1[6]===numeroSorteados[18]
+    || num1[6]===numeroSorteados[19]
+    || num1[6]===numeroSorteados[20]
+    || num1[6]===numeroSorteados[21]
+    || num1[6]===numeroSorteados[22]
+    || num1[6]===numeroSorteados[23]
+    || num1[6]===numeroSorteados[24]
+    || num1[6]===numeroSorteados[25]
+    || num1[6]===numeroSorteados[26]
+    || num1[6]===numeroSorteados[27]
+    || num1[6]===numeroSorteados[28]
+    || num1[6]===numeroSorteados[29]
+    
+    ){
+        window.document.querySelectorAll('td')[6].style.backgroundColor='blue';
+    }
+    
+    
+                    if(num1[7]===numeroSorteados[0]
+    || num1[7]===numeroSorteados[1]
+    || num1[7]===numeroSorteados[2]
+    || num1[7]===numeroSorteados[3]
+    || num1[7]===numeroSorteados[4]
+    || num1[7]===numeroSorteados[5]
+    || num1[7]===numeroSorteados[6]
+    || num1[7]===numeroSorteados[7]
+    || num1[7]===numeroSorteados[8]
+    || num1[7]===numeroSorteados[9]
+    || num1[7]===numeroSorteados[10]
+    || num1[7]===numeroSorteados[11]
+    || num1[7]===numeroSorteados[12]
+    || num1[7]===numeroSorteados[13]
+    || num1[7]===numeroSorteados[14]
+    || num1[7]===numeroSorteados[15]
+    || num1[7]===numeroSorteados[16]
+    || num1[7]===numeroSorteados[17]
+    || num1[7]===numeroSorteados[18]
+    || num1[7]===numeroSorteados[19]
+    || num1[7]===numeroSorteados[20]
+    || num1[7]===numeroSorteados[21]
+    || num1[7]===numeroSorteados[22]
+    || num1[7]===numeroSorteados[23]
+    || num1[7]===numeroSorteados[24]
+    || num1[7]===numeroSorteados[25]
+    || num1[7]===numeroSorteados[26]
+    || num1[7]===numeroSorteados[27]
+    || num1[7]===numeroSorteados[28]
+    || num1[7]===numeroSorteados[29]
+    
+    ){
+        window.document.querySelectorAll('td')[7].style.backgroundColor='blue';
+    }
+    
+                    if(num1[8]===numeroSorteados[0]
+    || num1[8]===numeroSorteados[1]
+    || num1[8]===numeroSorteados[2]
+    || num1[8]===numeroSorteados[3]
+    || num1[8]===numeroSorteados[4]
+    || num1[8]===numeroSorteados[5]
+    || num1[8]===numeroSorteados[6]
+    || num1[8]===numeroSorteados[7]
+    || num1[8]===numeroSorteados[8]
+    || num1[8]===numeroSorteados[9]
+    || num1[8]===numeroSorteados[10]
+    || num1[8]===numeroSorteados[11]
+    || num1[8]===numeroSorteados[12]
+    || num1[8]===numeroSorteados[13]
+    || num1[8]===numeroSorteados[14]
+    || num1[8]===numeroSorteados[15]
+    || num1[8]===numeroSorteados[16]
+    || num1[8]===numeroSorteados[17]
+    || num1[8]===numeroSorteados[18]
+    || num1[8]===numeroSorteados[19]
+    || num1[8]===numeroSorteados[20]
+    || num1[8]===numeroSorteados[21]
+    || num1[8]===numeroSorteados[22]
+    || num1[8]===numeroSorteados[23]
+    || num1[8]===numeroSorteados[24]
+    || num1[8]===numeroSorteados[25]
+    || num1[8]===numeroSorteados[26]
+    || num1[8]===numeroSorteados[27]
+    || num1[8]===numeroSorteados[28]
+    || num1[8]===numeroSorteados[29]
+    
+    ){
+        window.document.querySelectorAll('td')[8].style.backgroundColor='blue';
+    }
+    
+                    if(num1[9]===numeroSorteados[0]
+    || num1[9]===numeroSorteados[1]
+    || num1[9]===numeroSorteados[2]
+    || num1[9]===numeroSorteados[3]
+    || num1[9]===numeroSorteados[4]
+    || num1[9]===numeroSorteados[5]
+    || num1[9]===numeroSorteados[6]
+    || num1[9]===numeroSorteados[7]
+    || num1[9]===numeroSorteados[8]
+    || num1[9]===numeroSorteados[9]
+    || num1[9]===numeroSorteados[10]
+    || num1[9]===numeroSorteados[11]
+    || num1[9]===numeroSorteados[12]
+    || num1[9]===numeroSorteados[13]
+    || num1[9]===numeroSorteados[14]
+    || num1[9]===numeroSorteados[15]
+    || num1[9]===numeroSorteados[16]
+    || num1[9]===numeroSorteados[17]
+    || num1[9]===numeroSorteados[18]
+    || num1[9]===numeroSorteados[19]
+    || num1[9]===numeroSorteados[20]
+    || num1[9]===numeroSorteados[21]
+    || num1[9]===numeroSorteados[22]
+    || num1[9]===numeroSorteados[23]
+    || num1[9]===numeroSorteados[24]
+    || num1[9]===numeroSorteados[25]
+    || num1[9]===numeroSorteados[26]
+    || num1[9]===numeroSorteados[27]
+    || num1[9]===numeroSorteados[28]
+    || num1[9]===numeroSorteados[29]
+    
+    ){
+        window.document.querySelectorAll('td')[9].style.backgroundColor='blue';
+    }
+    
+    
+                    if(num1[10]===numeroSorteados[0]
+    || num1[10]===numeroSorteados[1]
+    || num1[10]===numeroSorteados[2]
+    || num1[10]===numeroSorteados[3]
+    || num1[10]===numeroSorteados[4]
+    || num1[10]===numeroSorteados[5]
+    || num1[10]===numeroSorteados[6]
+    || num1[10]===numeroSorteados[7]
+    || num1[10]===numeroSorteados[8]
+    || num1[10]===numeroSorteados[9]
+    || num1[10]===numeroSorteados[10]
+    || num1[10]===numeroSorteados[11]
+    || num1[10]===numeroSorteados[12]
+    || num1[10]===numeroSorteados[13]
+    || num1[10]===numeroSorteados[14]
+    || num1[10]===numeroSorteados[15]
+    || num1[10]===numeroSorteados[16]
+    || num1[10]===numeroSorteados[17]
+    || num1[10]===numeroSorteados[18]
+    || num1[10]===numeroSorteados[19]
+    || num1[10]===numeroSorteados[20]
+    || num1[10]===numeroSorteados[21]
+    || num1[10]===numeroSorteados[22]
+    || num1[10]===numeroSorteados[23]
+    || num1[10]===numeroSorteados[24]
+    || num1[10]===numeroSorteados[25]
+    || num1[10]===numeroSorteados[26]
+    || num1[10]===numeroSorteados[27]
+    || num1[10]===numeroSorteados[28]
+    || num1[10]===numeroSorteados[29]
+    
+    ){
+        window.document.querySelectorAll('td')[10].style.backgroundColor='blue';
+    }
+    
+                    if(num1[11]===numeroSorteados[0]
+    || num1[11]===numeroSorteados[1]
+    || num1[11]===numeroSorteados[2]
+    || num1[11]===numeroSorteados[3]
+    || num1[11]===numeroSorteados[4]
+    || num1[11]===numeroSorteados[5]
+    || num1[11]===numeroSorteados[6]
+    || num1[11]===numeroSorteados[7]
+    || num1[11]===numeroSorteados[8]
+    || num1[11]===numeroSorteados[9]
+    || num1[11]===numeroSorteados[10]
+    || num1[11]===numeroSorteados[11]
+    || num1[11]===numeroSorteados[12]
+    || num1[11]===numeroSorteados[13]
+    || num1[11]===numeroSorteados[14]
+    || num1[11]===numeroSorteados[15]
+    || num1[11]===numeroSorteados[16]
+    || num1[11]===numeroSorteados[17]
+    || num1[11]===numeroSorteados[18]
+    || num1[11]===numeroSorteados[19]
+    || num1[11]===numeroSorteados[20]
+    || num1[11]===numeroSorteados[21]
+    || num1[11]===numeroSorteados[22]
+    || num1[11]===numeroSorteados[23]
+    || num1[11]===numeroSorteados[24]
+    || num1[11]===numeroSorteados[25]
+    || num1[11]===numeroSorteados[26]
+    || num1[11]===numeroSorteados[27]
+    || num1[11]===numeroSorteados[28]
+    || num1[11]===numeroSorteados[29]
+    
+    ){
+        window.document.querySelectorAll('td')[6].style.backgroundColor='blue';
+    }
+    
+                    if(num1[12]===numeroSorteados[0]
+    || num1[12]===numeroSorteados[1]
+    || num1[12]===numeroSorteados[2]
+    || num1[12]===numeroSorteados[3]
+    || num1[12]===numeroSorteados[4]
+    || num1[12]===numeroSorteados[5]
+    || num1[12]===numeroSorteados[6]
+    || num1[12]===numeroSorteados[7]
+    || num1[12]===numeroSorteados[8]
+    || num1[12]===numeroSorteados[9]
+    || num1[12]===numeroSorteados[10]
+    || num1[12]===numeroSorteados[11]
+    || num1[12]===numeroSorteados[12]
+    || num1[12]===numeroSorteados[13]
+    || num1[12]===numeroSorteados[14]
+    || num1[12]===numeroSorteados[15]
+    || num1[12]===numeroSorteados[16]
+    || num1[12]===numeroSorteados[17]
+    || num1[12]===numeroSorteados[18]
+    || num1[12]===numeroSorteados[19]
+    || num1[12]===numeroSorteados[20]
+    || num1[12]===numeroSorteados[21]
+    || num1[12]===numeroSorteados[22]
+    || num1[12]===numeroSorteados[23]
+    || num1[12]===numeroSorteados[24]
+    || num1[12]===numeroSorteados[25]
+    || num1[12]===numeroSorteados[26]
+    || num1[12]===numeroSorteados[27]
+    || num1[12]===numeroSorteados[28]
+    || num1[12]===numeroSorteados[29]
+    
+    ){
+        window.document.querySelectorAll('td')[12].style.backgroundColor='blue';
+    }
+    
+        
+                    if(num1[13]===numeroSorteados[0]
+    || num1[13]===numeroSorteados[1]
+    || num1[13]===numeroSorteados[2]
+    || num1[13]===numeroSorteados[3]
+    || num1[13]===numeroSorteados[4]
+    || num1[13]===numeroSorteados[5]
+    || num1[13]===numeroSorteados[6]
+    || num1[13]===numeroSorteados[7]
+    || num1[13]===numeroSorteados[8]
+    || num1[13]===numeroSorteados[9]
+    || num1[13]===numeroSorteados[10]
+    || num1[13]===numeroSorteados[11]
+    || num1[13]===numeroSorteados[12]
+    || num1[13]===numeroSorteados[13]
+    || num1[12]===numeroSorteados[14]
+    || num1[13]===numeroSorteados[15]
+    || num1[13]===numeroSorteados[16]
+    || num1[13]===numeroSorteados[17]
+    || num1[13]===numeroSorteados[18]
+    || num1[13]===numeroSorteados[19]
+    || num1[13]===numeroSorteados[20]
+    || num1[13]===numeroSorteados[21]
+    || num1[13]===numeroSorteados[22]
+    || num1[13]===numeroSorteados[23]
+    || num1[13]===numeroSorteados[24]
+    || num1[13]===numeroSorteados[25]
+    || num1[13]===numeroSorteados[26]
+    || num1[13]===numeroSorteados[27]
+    || num1[13]===numeroSorteados[28]
+    || num1[13]===numeroSorteados[29]
+    
+    ){
+        window.document.querySelectorAll('td')[13].style.backgroundColor='blue';
+    }
+    
+                 
+        
+                    if(num1[14]===numeroSorteados[0]
+    || num1[14]===numeroSorteados[1]
+    || num1[14]===numeroSorteados[2]
+    || num1[14]===numeroSorteados[3]
+    || num1[14]===numeroSorteados[4]
+    || num1[14]===numeroSorteados[5]
+    || num1[14]===numeroSorteados[6]
+    || num1[14]===numeroSorteados[7]
+    || num1[14]===numeroSorteados[8]
+    || num1[14]===numeroSorteados[9]
+    || num1[14]===numeroSorteados[10]
+    || num1[14]===numeroSorteados[11]
+    || num1[14]===numeroSorteados[12]
+    || num1[14]===numeroSorteados[13]
+    || num1[14]===numeroSorteados[14]
+    || num1[14]===numeroSorteados[15]
+    || num1[14]===numeroSorteados[16]
+    || num1[14]===numeroSorteados[17]
+    || num1[14]===numeroSorteados[18]
+    || num1[14]===numeroSorteados[19]
+    || num1[14]===numeroSorteados[20]
+    || num1[14]===numeroSorteados[21]
+    || num1[14]===numeroSorteados[22]
+    || num1[14]===numeroSorteados[23]
+    || num1[14]===numeroSorteados[24]
+    || num1[14]===numeroSorteados[25]
+    || num1[14]===numeroSorteados[26]
+    || num1[14]===numeroSorteados[27]
+    || num1[14]===numeroSorteados[28]
+    || num1[14]===numeroSorteados[29]
+    
+    ){
+        window.document.querySelectorAll('td')[14].style.backgroundColor='blue';
+    }*/
+    
+    for(i=0;i<30;i++){
+        
+        if(numeroSorteados[0]===num1[i]){
+            
+            window.document.querySelectorAll('td')[0].style.backgroundColor= 'blue';
+            
+        }
+        
+    }
+                 
+                 
+                 
+                }
+                
+                
+            </script>
+        
+    </body>
+</html>
